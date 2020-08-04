@@ -6,18 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS Stylesheet-->
+  <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome CSS Icons -->
+    <script src="https://kit.fontawesome.com/61780fc631.js" crossorigin="anonymous"></script>
   <title>Fitness Tracker</title>
 </head>
 
 <body>
   <nav>
-    <a href="/">Fitness Tracker</a>
-    <a href="/stats">Dashboard</a>
+    <a href="/" class="huge ui blue button"><i class="fas fa-burn" aria-hidden="true"></i> Home</a>
+    <a href="/stats" class="huge positive ui button"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
   </nav>
   <div class="wrapper">
     <header>
-      <h1>Fitness Tracker</h1>
+      <h1><i class='fas fa-running'></i> Fitness Tracker <i class='fas fa-dumbbell'></i></h1>
     </header>
     <div class="ui container exercise">
       <div class="ui raised card m-auto">
@@ -79,11 +82,13 @@
       </div>
     </div>
   </div>
-  <div id="toast">
-    Workout Added Successfully!
+  <div id="toast"><h1>
+    This Workout Has Been Added Successfully! </br> 
+    <i class='fas fa-trophy'></i> </h1>
   </div>
-  <script src="/api.js"></script>
-  <script src="/exercise.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/exercise.js"></script>
+
 </body>
 
 </html>
