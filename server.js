@@ -24,4 +24,5 @@ app.use(express.static("public"));
 addHtmlRoutes(app);
 addAPIRoutes(app);
 
-app.listen(PORT, ()=> console.log(`App listening on port ${PORT}`));
+app.listen(PORT, ()=> {
+    console.log(`App listening on port http://localhost:${PORT}`)});
